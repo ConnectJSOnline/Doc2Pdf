@@ -11,6 +11,9 @@ namespace Docx2Pdf
     {
         static void Main(string[] args)
         {
+
+            Console.Write("Password : ");
+            
             Console.WriteLine("Processing Files\n");
             string output_path = System.IO.Directory.CreateDirectory(System.IO.Directory.GetCurrentDirectory() + "/output").FullName;
             foreach (string file in System.IO.Directory.GetFiles(System.IO.Directory.GetCurrentDirectory(),"*.docx",System.IO.SearchOption.TopDirectoryOnly))
